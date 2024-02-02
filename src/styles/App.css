@@ -1,0 +1,73 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-bar {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  gap: 1em;
+}
+
+.nav-header {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nav-title {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.nav-subtitle {
+  font-size: large;
+  font-weight: 300;
+}
+
+.card-list {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  justify-items: center;
+
+  .card-item {
+    transition: transform 0.2s ease;
+  }
+
+  .card-img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .card-item:hover {
+    transform: scale(1.8);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
