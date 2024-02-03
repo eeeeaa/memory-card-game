@@ -4,11 +4,17 @@ body {
   margin: 0;
 }
 
+body {
+  background: linear-gradient(45deg, #ff9bd2, #f3d7ca);
+}
+
 .content {
   min-height: 100vh;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #efecec;
+  border-radius: 1em;
 }
 
 .nav-bar {
@@ -16,8 +22,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-color: #85586f;
   gap: 1em;
+  border-radius: 1em 1em 0 0;
 }
 
 .nav-header {
@@ -45,6 +52,7 @@ body {
   justify-items: center;
 
   .card-item {
+    cursor: pointer;
     transition: transform 0.2s ease;
   }
 

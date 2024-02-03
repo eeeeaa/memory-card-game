@@ -1,6 +1,6 @@
 const baseUrl =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
-const dexCount = 50;
+const dexCount = 100;
 
 function generateListOfRandomNumbers(count) {
   const nums = new Set();

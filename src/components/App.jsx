@@ -68,7 +68,7 @@ function App() {
   const [bestScore, setBestScore] = useState(0);
 
   useEffect(() => {
-    setItems(getRandomImages(20));
+    setItems(getRandomImages(50));
   }, [score]);
 
   return (
